@@ -1,0 +1,32 @@
+var geometry = /* color: #0b4a8b */ee.Geometry.Point([80.13053689969766, 12.460580684299105]),
+    geometry2 = /* color: #ffc82d */ee.Geometry.MultiPoint(
+        [[78.44127041259185, 10.803813271477763],
+         [78.5813460961856, 11.41829261250588],
+         [75.72049836567386, 12.444764332703675],
+         [77.07181672504886, 12.535937945020553],
+         [79.02463654926761, 12.828011324223391],
+         [79.34873322895511, 13.542011802923623],
+         [76.32749299458011, 15.244579634374666]]);
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var dataset = ee.Image('Oxford/MAP/accessibility_to_healthcare_2019');
+var accessibility = dataset.select('accessibility');
+var accessibilityVis = {
+  min: 0.0,
+  max: 41556.0,
+  gamma: 4.0,
+};
+Map.setCenter(80.13, 12.46, 10);
+Map.addLayer(accessibility, accessibilityVis, 'Accessibility');
+
+var datas = ee.ImageCollection('WorldPop/GP/100m/pop');
+
+var visualization = {
+  bands: ['population'],
+  min: 0.0,
+  max: 50.0,
+  palette: ['24126c', '1fff4f', 'd4ff50']
+};
+
+Map.setCenter(80.13, 12.46, 10);
+
+Map.addLayer(datas, visualization, 'Population');
