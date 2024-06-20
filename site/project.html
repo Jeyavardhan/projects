@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" >
+<head>
+  <title>Payone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Test ">
+  <meta name="author" content="Jeyavardhan">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images\image.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=JejuGothic&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  
+<style>
+
+  .img-fluid:hover{
+transform:scale(1.3);
+transition: 1.5s;
+  }
+  .gt_strtd{
+    background: white;
+    color:black;
+    border-radius: 10px;
+    border:black solid 1px;
+    padding:10px;
+  }
+
+  .gt_strtd:hover{
+	border:none;
+  font-weight: 600;
+  transform: scale(1.9);
+  transition: 0.8s;
+	background: none;
+	color:white;
+  }
+
+</style>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<script>
+  document.getElementById("Change").onclick = function() {
+    myFunction()
+  };
+
+  function myFunction() {
+    let color = document.body.style.background;
+    if (color=== '#f5f5f5') {
+      document.body.style.background = "white";
+    } else {
+      document.body.style.background= "black";
+    }
+
+  }
+</script>
+<body style="background-color: #f5f5f5; position:relative">
+  <header>
+    <nav class="navbar navbar-expand-sm ">
+        <div class="container-fluid" style="background-color: #f5f5f5;padding-left: 50px;">
+          <img src="images/image.jpg" class="img-fluid rounded-top" alt="">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav" style=" text-align: left; color: black; font-size: 12px; font-family: Inter; font-weight: 700;white-space:nowrap ;">
+                    <li class="nav-item" style="padding-right: 15px">
+                      <a class="nav-link" href="#" style="font-size:20px;">Home</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 15px">
+                      <a class="nav-link" href="#" style="font-size:20px;">Case study</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="font-size:20px">Services</a>
+                    </li>
+                </ul>        
+        </div>
+        <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+aria-expanded="false" style="text-decoration-color: rgb(0, 0, 0); background-color: #f5f5f5;">ENG
+                <span class="glyphicon glyphicon-globe" style="height: 5%;width: 5%;"></span>
+                </button>        
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+                <h6 class="dropdown-header">Languages</h6>
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">French</a>
+                <a class="dropdown-item" href="#">Tamil</a>
+            </div>
+            <div class="vr"></div>
+            <a  class="btn" onclick="openForm()" role="button" title="click to get login form">Login</a>
+            <a  class="btn btn-dark" href="#" role="button">Get Started</a>
+        </div>
+        </div>
+    </nav>
+    <!-- logins -->
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <a href="#" title="no problem" class="pwd">Forgot password?</a>
+    <br>
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    <!--login -->      
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-7 ">
+  <span class="e113_460">The Modern Finance<br>
+     Solution With,</span> 
+  <span class="e113_461">Payone</span>
+  <br>
+  <i  class="e113_462">“Transforming the Future of Finance:Your<br>
+     Gateway to a Seamless FinTech experience”</i>
+     <br>
+     <br>
+     <br>
+     <a class="other" href="#" role="button" > Get Started </a>
+     <a class="btn btn-dark" href="#" role="button" style="position: relative;left:25%">Download Now</a>
+     <br>
+     <br>
+     <div class="row">
+      <div class="col-md-3 offset-3 align-content-end" style="width:125px">
+   <img src="images/images.png">
+     </div>
+     <div class="col-md-6">
+      <span style="font-weight: 600;">1,000+</span><br>
+      <span style="color:#9da1b1">Beta Users</span>
+     </div>
+     </div>
+      </div>
+      <div  class="col-md-5">
+     <img src="images/bannerright.png" class="img-fluid1 rounded-top" alt="">
+     </div>
+    </div>
+    <br>
+    <br>
+    <p class="e113_221">Some of our Trusted Partners/Affiliates</p>
+    <div class="row justify-content-start align-items-start ">
+      <div class="col-2"><img src="images\image 5.png" class="img-fluid" alt=""></div>
+      <div class="col-2"><a href="https://www.microsoft.com/en-in" title="Microsoft Main Site">
+        <img src="images\image 6.png" class="img-fluid" alt=""></a></div>
+      <div class="col-2"><a href="https://stripe.com/en-in" title="Stripe Main Site">
+        <img src="images\image 7.png" class="img-fluid" alt=""></a></div>
+      <div class="col-2"><a href="https://www.forbesmarshall.com/India" title="Forbes India">
+        <img src="images\Mask group (2).png" class="img-fluid" alt=""></a></div>
+      <div class="col-2"><a href="https://www.uber.com/in/en/" title="Uber Main site">
+        <img src="images\Mask group (1).png" class="img-fluid" alt=""></a></div>
+      <div class="col-2"><a href="https://www.entrepreneur.com/en-in" title="entrepreneur Site">
+        <img src="images\Mask group.png" class="img-fluid" alt=""></a></div>
+    </div>
+<hr class="2px" />
+<br>
+<br>
+<br>
+<br>
+<!--cards -->
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-3">
+    <div class="card1" >
+      <img src="images\Group 27.png"  class="center" alt="...">
+      <div class="card-body">
+        <h3 class="card-title" style="text-align:center">Checking Accounts</h3>
+        <hr/>
+        <p class="card-text" style="text-align:center;font-size:20px;padding:20px;">Our Checking Account is the perfect 
+          solution for managing your day-to-day financial transactions</p>
+          <br><br><br>
+      </div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="card1" >
+      <img src="images\Group 28.png" class="center" alt="...">
+      <div class="card-body">
+        <h3 class="card-title" style="text-align:center">Credit & Debit Cards</h3>
+        <hr/>
+        <p class="card-text" style="text-align:center;font-size:20px;padding:20px;">Welcome to our Credit & Debit Cards section!
+           Whether you need the convenience of a credit card</p>
+        <br><br><br>
+      </div>
+    </div>
+  </div>
+  <div class="col-3">
+  <div class="card1">
+    <img src="images\Group 29.png" class="center" alt="...">
+    <div class="card-body">
+      <h3 class="card-title" style="text-align:center">Manage Transactions</h3>
+      <hr/>
+      <p class="card-text" style="text-align:center;font-size:20px;padding:20px;">With Manage Transactions,you can easily view
+        ,organize and track incoming and outgoing payments.</p>
+      <br><br>
+    </div>
+  </div>
+  <div class="col-1"></div>
+</div>
+</div>
+
+<!--intro-->
+
+<div class="row" style="position:relative">
+  <div class="col-6">
+    <br><br><br><br><br>
+    <img src="images\Group 30.png" class="center" 
+    style="position:relative"alt="">
+  </div>
+  <div class="col-6" style="font-weight:400">
+    <h2 style="text-align:left"><br><br><br>All your finance modules <br>
+      in one app</h2>
+      <p class="paragraph"><br>Welcome to our FinTech website! We <br>are here to revolutionize 
+        the way you<br> manage your finances, making it<br> 
+        easier,faster, and more accessible for <br>everyone.<br><br>
+        With our cutting-edge technology and <br>innovative solutions,we aim to <br>empower individuals.</p>
+      <button class="btn7" style="border-width:1px;border-color: black;position:relative;padding-right:40px">Learn More
+          <span class="material-icons" style="position:absolute;right:5px">arrow_forward</span></button>
+    </div>
+</div>
+<br><br><br><br>
+
+
+
+</div>
+<div class="row">
+  <div class="col-4 offset-2">
+<h5 class="e113_222" >THE CHALLENGE</h5>
+<br>
+<H2 style="text-align:left">Revolutionizing the Future <br>
+  of Finance: Unleashing the<br>
+   Power of FinTech”</H2><br>
+<P class="paragraph">World class marketing freelancer <br>and vetted based on proven results.</P>
+  </div>
+  <div class="col-4">
+    <img src="images\Group 31.png" class="center" alt="">
+  </div><div class="col-2"></div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="col-6">
+<br><br><br>
+    <img src="images\Group 32.png" class="center" 
+    style="position:relative"alt="">
+    </div>
+  <div class="col-6">
+    <h2 style="text-align:left"><br><br>Transaction easy<br>
+    within few seconds</h2>
+      <p class="paragraph"><br>
+        We are revolutionising the way you manage your<br>
+        finanaces.Our user-friendly platform combines<br>
+        cutting-edge technology with intelligent <br>
+        solutions to empower you to take control<br>
+        of your finanacial future.<br> 
+        <br>
+        <button class="btn7" style="position:relative;padding-right:40px;border-width:1px;border-color: black;" href="#" >
+          Learn More<span class="material-icons" 
+          style="position:absolute;right:5px">arrow_forward</span></button>
+  </div>
+  </div>
+  <br><br><br><br>
+<h1 style="text-align:center">What Our Customers <br> Are Saying</h1>
+<div class="row">
+  <br><br>
+
+  <!-- Reviews -->
+
+  <div class="col-3 " style="padding:20px">
+    <div class="card2">
+      <div class="card-body">
+        <h3 ><span class="material-icons-round" style="font-size:60px">
+          format_quote
+          </span></h3>
+        <p class="card-text" style="font-weight:600">
+          “Fantastic financial app <br>
+          experience! I have been using this<br>
+          finance app for a while now and I <br>
+          must say,it has completely <br>
+          transformed the way I manage my <br>
+          finances.
+        </p><br><br><br>
+      <hr/>
+        <div class="row">
+          <div class="col-3">
+      <img src="images\image_10.png" 
+      class="rounded" style="height:40px;width:40px;display:inline-block" ></div>
+      <div class="col-9" style="line-height: 100%;"><span style="color: #838383;font-size: 12px;font-weight: 600;">
+      Product designer</span><br>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span><br>
+      <span style="color:black;font-size: 12px;font-weight: 600;"> Madhu Mia </span></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-3 offset-1" style="padding:20px">
+    <div class="card2">
+      <div class="card-body">
+        <h3 class="card-title"><span class="material-icons-outlined" style="font-size:60px;">
+          format_quote
+          </span></h3>
+        <p class="card-text" style="font-weight:600">
+          “Best app in my daily life which <br>
+          makes my life more easy and <br>
+          secured, just amazing, Love it a <br>
+          lot. 100% user-friendly platform <br>
+          <br> <br><br><br><br><br>
+        </p><hr/><div class="row">
+          <div class="col-3">
+      <img src="images\image_12.png" 
+      class="rounded" style="height:40px;width:40px;display:inline-block" ></div>
+      <div class="col-9" style="line-height: 100%;"><span style="color: #838383;font-size: 12px;font-weight: 600;">
+      Webflow developer</span><br>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span><br>
+      <span style="color:black;font-size: 12px;font-weight: 600;"> John Doe </span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-3 offset-1" style="padding:20px">
+    <div class="card2">
+      <div class="card-body">
+        <h3 class="card-title" ><span class="material-icons-round" style="font-size:60px;" >
+          format_quote
+          </span></h3>
+        <p class="card-text"  style="font-weight:600">
+          “Excellent financial app experience! <br>
+          I have been using this finance app<br> 
+          for a while now and i must say, the <br>
+          app is incredibly user-friendly and <br>
+          intuitive, making it easy for anyone <br>
+          to navigate</p><br><br><br><hr/><div class="row">
+            <div class="col-3">
+        <img src="images\image_11.png" 
+        class="rounded" style="height:40px;width:40px;display:inline-block" ></div>
+        <div class="col-9" style="line-height: 100%;"><span style="color: #838383;font-size: 12px;font-weight: 600;">
+        UX Writer</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span><br>
+        <span style="color:black;font-size: 12px;font-weight: 600;"> H.R.Habib </span></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<br>
+<!--almost footer-->
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10 ">
+    <div class="card3" >
+      <div class="card-body" >
+        <br><br>
+        <h4 class="e113_223" style="font-weight: 900;">Open your account today & Enjoy!</h4>
+        <p class="e113_224">World class marketing freelancer and micro organize</p>
+        <br>
+        <a class="gt_strtd" href="#" role="button" style="border-color: black;"> Get Started </a>
+     <a class="btn btn-dark" href="#" role="button" style="position: relative;left:30px">Download Now</a>
+     <br><br>
+      </div>
+    </div>
+  </div>
+  <div class="col-1"></div>
+</div>
+<br><br>
+<hr/>
+
+<!--footer-->
+<div class="row">
+  <div class="col-3 offset-1"><br><br><img src="images\image.jpg" class="logo"><br>
+ <div class="e113_225"> Your banking Journey Simplified </div>
+ <div style="text-align:left;position:relative;left:50px">
+ <i class="bi bi-facebook"></i>
+ <i class="bi bi-youtube"></i>
+ <i class="bi bi-twitter"></i>
+ <i class="bi bi-linkedin"></i>
+ </div>    
+ 
+ <div class="switch">
+  <input type="checkbox" class="switch__input" id="Switch">
+  <label class="switch__label" for="Switch" id="change">
+      <span class="switch__indicator"></span>
+      <span class="switch__decoration"></span>
+  </label>
+</div>
+
+</div>
+  <div class="col-3 "><div class="e113_226">Contact</div>
+<div class="e113_225">+1(469)4099209 <br>hello@immihub.com</div>
+<br><br><div class="e113_226">Address<br></div>
+<div class="e113_225">6600 Tennyson Parkway Piano<br>Texas USA<br>07:00 AM - 07:00 PM</div>
+</div>
+  <div class="col-2"><div class="e113_226">Explore </div>
+<div class="e113_225">Home <br><a href="#" style="color: #9da1b1;"> Why Payone?</a>
+   <br><a href="#" style="color: #9da1b1;">Features</a>
+   <br><a href="#" style="color: #9da1b1;"> FAQs</a><br><a href="#" style="color: #9da1b1;">Contact</a></div></div>
+  <div class="col-2"><div class="e113_226">Support</div>
+<div class="e113_225">Help center<br> Privacy Policy <br> Disclaimer <br>FAQs<br></div></div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-3">
+<div style="font-weight: 700;font-size:18px;">English &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="material-symbols-outlined">dark_mode</span></div>
+  </div>
+  <div class="col-5" style="text-align: center;">
+<div class="e113_226"><a href="#" style="color: black;">Download App</a></div>
+<div class="e113_225">Makes Your Life More Easy</div>
+<img src="images\image 18.png">
+  </div>
+  <div class="col-3"></div>
+</div>
+
+<!--footer-->
+<div class="row" style="background-color: black;">
+  <div class="col-3 offset-1">
+    <a href="#" style="color: white;">
+    Copyright&copy; all rights reserved</a>
+  </div>
+  <div class="col-2 offset-4"><a href="#" style="color: white;">Privacy Policy</a></div>
+  <div class="col-2"><a href="#" style="color: white;">Terms & Conditions</a></div>
+</div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
